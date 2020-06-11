@@ -3,26 +3,179 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.1/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;500;700;800;900&display=swap" rel="stylesheet">
         <title>htmlcss-hubspot</title>
+
     </head>
     <body>
         <!-- sezione HEADER -->
-        <section class="container-fullwidth top">
+        <section class="container-fullwidth top ">
             <div class="nav grey">
-                <div class="container fixed-nav"></div>
+                <div class="container fixed-nav clearfix">
+                    <div class="left-header">
+                        <nav>
+                            <ul>
+                                <li id="language">
+                                    <a href="#">
+                                        <i class="fas fa-globe-europe"></i>
+                                        <span>English</span>
+                                        <i class="fas fa-chevron-down " style=" color:#7c98b6;"></i>
+                                    </a>
+                                </li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="cta-container">
+                            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                                <button id="search-btn" type="submit"><i class="fa fa-search"></i></button>
+                                <input id="search" type="text" placeholder="Search.." name="search2">
+                            </form>
+                            <button class="btn btn-white">Log in</button>
+                        <button class="btn btn-small btn-orange">Get HubSpot Free</button>
+                    </div>
+
+                </div>
             </div>
+            <!-- FINE PRIMA BARRA -->
             <div class="menu">
-                <div class="container menu-nav"></div>
+                <div class="container menu-nav clearfix">
+                    <div id="logo">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F3%2F3f%2FHubSpot_Logo.svg%2F640px-HubSpot_Logo.svg.png&f=1&nofb=1" alt="">
+                    </div>
+                    <nav id="menu">
+                        <li>
+                            <a href="#">
+                                <span>Software</span>
+                                <i class="fas fa-chevron-down " style=" color:#7c98b6;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> <span>Pricing</span> </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Resources</span>
+                                <i class="fas fa-chevron-down " style=" color:#7c98b6;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Partners</span>
+                                <i class="fas fa-chevron-down " style=" color:#7c98b6;"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>About</span>
+                                <i class="fas fa-chevron-down " style=" color:#7c98b6;"></i>
+                            </a>
+                        </li>
+
+                    </nav>
+                </div>
             </div>
 
         </section>
-
+        <!-- FINE HEADER -->
+        <!-- sezione rosa -->
         <section class="container-fullwidth pink">
-            <div class="container"></div>
+            <div class="container banner">
+                <div class="jumbotron">
+                        <h1>There’s a better way to grow.</h1>
+                        <p>Marketing, sales, and service software that helps your business grow without compromise. Because “good for the business” should also mean “good for the customer.”</p>
+                        <button class="btn btn-big btn-orange">Get HubSpot free</button>
+                        <p>Get started with FREE tools, and upgrade as you grow.</p>
+                    </div>
+                    <div class="barra-verde">
+
+                    </div>
+                    <img src="https://cdn2.hubspot.net/hubfs/53/raw_assets/public/_Web%20Team%20Assets/Website/assets/svg/hero.svg" alt="">
+
+            </div>
         </section>
         <!-- Sezione grigia -->
         <section class="container-fullwidth grey">
-            <div class="container"></div>
+            <div class="container intro">
+                <div class="contenuto clearfix">
+                    <div class="top2">
+                        <img src="https://www.hubspot.com/hubfs/assets/hubspot.com/home/2018/Integrations_Illustration@2x.png" alt="">
+                        <h2>Powerful alone. Better together.</h2>
+                        <p>HubSpot offers a full stack of software for marketing, sales, and customer service, with a completely free CRM at its core. They’re powerful alone — but even better when used together.</p>
+                    </div>
+                    <div class="card1">
+                        <div class="card-left">
+                            <img src="" alt="">
+                            <button type="button" name="button"></button>
+                        </div>
+                        <hr>
+                        <div class="card-right">
+                            <h3></h3>
+                            <p></p>
+                            <hr><!--inline block-->
+                            <h3></h3>
+                            <ul><!-- usare float -->
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="" alt="">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <hr>
+                        <div class="card-bottom">
+                            <h3></h3>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button type="button" name="button"></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="" alt="">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <hr>
+                        <div class="card-bottom">
+                            <h3></h3>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button type="button" name="button"></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-top">
+                            <img src="" alt="">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                        <hr>
+                        <div class="card-bottom">
+                            <h3></h3>
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            <button type="button" name="button"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- sezione verde -->
         <section class="container-fullwidth green">
