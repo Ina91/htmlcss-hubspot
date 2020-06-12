@@ -42,8 +42,13 @@
     background-color: #fff3ee;
     /* position: relative; */
 }
-
+.riga-verde{
+    height:50px;
+    background-image: linear-gradient(to left, #00a48d, #afebe4);
+    /* position:relative; */
+}
 .green {
+    color:white;
     background-image: linear-gradient(to right, #00acb6, #00b9a9);
 }
 
@@ -192,10 +197,10 @@ h1 {
 }
 
 
-.top2 h2 {
+.top2 h2, .green-top h2{
     margin:10px;
 }
-.top2 p {
+.top2 p, .green-top p{
     margin:20px 0;
 }
 .card-uno{
@@ -278,3 +283,52 @@ h1 {
   color:#ff7a59;/* same as padding-left set on li */
 }
 /* fine check list */
+
+
+/* INIZIO sezione verde tabella */
+
+
+.green-top{
+    width: 80%;
+    text-align: center;
+    margin: 30px auto;
+}
+.green-bottom{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.item{
+    float: left;
+    /* da cancellare */
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+}
+/* .item-row{
+    vertical-align: middle;
+} */
+
+/* FINE VERDE */
+
+/* contatore e seconda tabella marchi */
+
+.counter, .logo-item{
+    float: left;
+}
+.table{
+    float: right;
+}
+
+.counter{
+    width: 20%;
+}
+.logo-item{
+    text-align: center;
+    /* da cancellare */
+    width: 100px;
+    height: 50px;
+    border:1px solid black;
+}
+.white-top{
+    margin:30px auto;
+}
