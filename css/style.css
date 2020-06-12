@@ -321,6 +321,7 @@ h1 {
 
 .counter{
     width: 20%;
+    padding: 30px;
 }
 .logo-item{
     text-align: center;
@@ -331,4 +332,36 @@ h1 {
 }
 .white-top{
     margin:30px auto;
+}
+.white-bottom{
+    position: relative;
+}
+
+
+.foto{
+    float: right;
+    margin-right: 50px;
+
+}
+.foto img {
+    width:300px;
+    height:350px;
+}
+
+.footer-nav{
+    position: relative;
+    margin:50px auto;
+}
+.container-column{
+    float: left;
+    width: 25%;
+    /* da cancellare */
+
+}
+.column{
+    /* da cancellare */
+    height: 200px;
+
+border: 1px solid white;
+
 }
