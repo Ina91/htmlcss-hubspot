@@ -256,27 +256,29 @@ h1 {
     text-align: center;
     margin:10px auto;
 }
-/* .card-bottom ul{
-    margin:10px auto;
-} */
 
 .card p{
     padding:15px;
     margin:10px auto;
 }
 
+.btn-card {
+    text-align: center;
+    margin:15px auto;
+}
 /* capire come cambiare immagine check list */
 .contenuto ul {
   list-style: none;
-  padding: 0;
-  margin:10px auto;
+  padding: 10;
+  margin:15px auto;
 }
 .contenuto li {
   padding-left: 1.3em;
 }
 .contenuto li:before {
-  content: "\f058"; /* FontAwesome Unicode */
-  font-family: fontawesome;
+  content: ""; /* FontAwesome Unicode */
+  /* font-family: fontawesome; */
+  ba
   display: inline-block;
   margin-left: -1.3em; /* same as padding-left set on li */
   width: 1.3em;
@@ -289,25 +291,49 @@ h1 {
 
 
 .green-top{
-    width: 80%;
+    width: 90%;
     text-align: center;
-    margin: 30px auto;
+    margin: 50px auto;
 }
+
 .green-bottom{
     text-align: center;
-    margin-bottom: 30px;
+    margin: 100px auto ;
 }
 .item{
+    width: 25%;
     float: left;
-    /* da cancellare */
-    width: 200px;
-    height: 200px;
+    padding: 30px;
     border: 1px solid white;
 }
-/* .item-row{
-    vertical-align: middle;
-} */
 
+.item-row-top{
+    border-top: none;
+    border-left: none;
+}
+
+.item-row-bottom{
+    border-bottom: none;
+    border-left: none;
+}
+.item-right{
+
+    border-right: none
+}
+
+.number{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 100px;
+    display: inline-block;
+}
+.plus{
+    display: inline-block;
+    font-weight: bold;
+    line-height: 100px;
+    vertical-align: middle;
+
+}
 /* FINE VERDE */
 
 /* contatore e seconda tabella marchi */
