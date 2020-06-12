@@ -14,7 +14,7 @@
     width: 70%;
     max-width: 1200px;
     margin: 0 auto;
-    font-family: Muli,sans-serif;
+    font-family: Roboto,sans-serif;
     position: relative;
 
     /* da cancellare */
@@ -135,6 +135,7 @@ li a {
 /* banner */
 .btn-big{
     padding:20px 15px;
+    margin-left:10px;
 }
 
 .banner {
@@ -143,7 +144,7 @@ li a {
     position: relative;
 }
 .jumbotron {
-    width: 40%;
+    width: 45%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -162,40 +163,92 @@ li a {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 45px;
     color:#33475b ;
     margin-bottom: 20px;
     padding: 10px;
 }
 
 .jumbotron p{
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Inizio sezione 2 */
 .intro {
     text-align: center;
-
 }
+
 .contenuto {
     width: 80%;
+    padding: 100px 0;
+    margin: 0 auto;
 }
 
-.top2{
-    width: 60%;
-    margin:0 auto,
-    position:absolute;
-}
-
-.card{
-    /* da cancellare */
-    height:100px;
-    color:blue;
-}
-.cards{
-    float: left;
-    width: 33.333333%;
-    /* da cancellare */
-    color :red;
+.top2 img {
+    width: 250px;
     height:200px;
 }
+
+
+.top2 h2 {
+    margin:10px;
+}
+.top2 p {
+    margin:20px 0;
+}
+.card-uno{
+    background-color: white;
+    width: 100%;
+    padding: 30px;
+}
+.card-uno img{
+    width: 210px;
+    height: 150px;
+
+}
+.card{
+    float: left;
+    width: 33.333333%;
+    background-color: white;
+}
+
+.btn-medium {
+    padding:10px 15px;
+}
+
+.card img {
+    width: 210px;
+    height: 150px;
+}
+.card-left{
+
+    vertical-align: middle;
+    display: inline-block;
+}
+.card-right{
+
+    width: 50%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+
+
+
+/* capire come cambiare immagine check list */
+.contenuto ul {
+  list-style: none;
+  padding: 0;
+}
+.contenuto li {
+  padding-left: 1.3em;
+}
+.contenuto li:before {
+  content: "\f058"; /* FontAwesome Unicode */
+  font-family: fontawesome;
+  display: inline-block;
+  margin-left: -1.3em; /* same as padding-left set on li */
+  width: 1.3em;
+  color:#ff7a59;/* same as padding-left set on li */
+}
+/* fine check list */
