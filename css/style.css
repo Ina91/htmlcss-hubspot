@@ -15,14 +15,15 @@
     max-width: 1200px;
     margin: 0 auto;
     font-family: Roboto,sans-serif;
-    position: relative;
-
     /* da cancellare */
-
     border: 1px solid black;
 }
-
+/* valori di base contenitori fullwidth */
+.white{
+    color:#33475b ;
+}
 .grey {
+    color:#33475b ;
     background-color: #f5f8fa;
 }
 .nav{
@@ -32,32 +33,40 @@
 
 .menu{
     height:50px;
+    margin-top:100px;
 }
 
 .blue{
+
     background-color: #33475b;
 }
 
 .pink{
+    color:#33475b ;
     background-color: #fff3ee;
     /* position: relative; */
 }
 .riga-verde{
     height:50px;
     background-image: linear-gradient(to left, #00a48d, #afebe4);
-    /* position:relative; */
+    position: relative;
+
 }
 .green {
     color:white;
     background-image: linear-gradient(to right, #00acb6, #00b9a9);
 }
+/* fine valori fullwidth */
 
-/* HEADER */
-/* header{
+/* START SECTION 1 */
+/* Start Header */
+header{    /* barra fissa */
+overflow: hidden;
 position: fixed;
 top:0;
-width: 100%; */
-
+left:0;
+width: 100%;
+z-index: 3; /*necessario affinvhè rimanga sempre in primo piano*/
 }
 .left-header {
     padding: 20px;
@@ -98,7 +107,6 @@ li a {
 .cta-container form{
     text-align: center;
     float: left;
-    font
 }
 
 .btn{
@@ -122,9 +130,10 @@ li a {
 .btn-small {
     padding: 10px 20px;
 }
-/* FINE PRIMA BARRA NAV */
+/* Fine Header */
 
-/* SECONDA BARRA NAV */
+
+/* start second nav bar */
 #logo img{
     width:  106px;
 }
@@ -138,8 +147,9 @@ li a {
 .menu-nav{
     padding:20px;
 }
-/* FINE HEADER */
-/* banner */
+/* END SECTION 1  */
+
+/*START SECTION 2 PINK */
 .btn-big{
     padding:20px 15px;
     margin-left:10px;
@@ -165,13 +175,10 @@ li a {
     bottom: 0;
     right: 0;
     transform: translateX(15%);
-
-
 }
 
 h1 {
     font-size: 45px;
-    color:#33475b ;
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -179,48 +186,56 @@ h1 {
 .jumbotron p{
     padding: 10px;
 }
+/* END SECTION 2 PINK */
 
-/* Inizio sezione 2 */
-.top2 {
+/* START SECTION 3 GREY   CARDS */
+.top-grey {
     text-align: center;
 }
 
 .contenuto {
-    width: 90%;
+    /* width: 90%; */
     padding: 100px 0;
     margin: 0 auto;
 }
 
-.top2 img {
+.top-grey img {
     width: 250px;
     height:200px;
 }
 
-
-.top2 h2, .green-top h2{
+.top-grey h2, .green-top h2{
     margin:10px;
 }
-.top2 p, .green-top p{
+.top-grey p, .green-top p{
     margin:20px 0;
 }
 .card-uno{
     background-color: white;
     padding: 30px ;
     margin: 25px 10px;
+    border-radius: 5px;
 }
 .card-uno img{
     width: 210px;
     height: 150px;
-
 }
+
 .card{
     float: left;
     width: 33.3333%;
+}
+
+.card-box:hover, .card-uno:hover {            /*zoom cards with hover*/
+  box-shadow: 0 5px 11px 0 #eaf0f6;
+  transform: scale(1.05);
 }
 .card-box{
     background-color: white;
     margin:0 10px;
     padding: 15px;
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
 .btn-medium {
@@ -247,19 +262,23 @@ h1 {
     left: 35px;
 
 }
+.card-top{
+    height: 350px;
+}
 
 .card-top h3{
     text-align: center;
-    margin:10px auto;
+    margin:15px auto;
 }
 .card-bottom h5{
     text-align: center;
-    margin:10px auto;
+    margin:15px auto;
+
 }
 
 .card p{
     padding:15px;
-    margin:10px auto;
+    margin:15px auto;
 }
 
 .btn-card {
@@ -287,8 +306,9 @@ h1 {
 /* fine check list */
 
 
-/* INIZIO sezione verde tabella */
+/* END SECTION 3 GREY */
 
+/* START SECTION 4 GREEN TABLE */
 
 .green-top{
     width: 90%;
@@ -310,11 +330,14 @@ h1 {
 .item-row-top{
     border-top: none;
     border-left: none;
+    border-bottom: none;
+    height:260px;
 }
 
 .item-row-bottom{
     border-bottom: none;
     border-left: none;
+    height:260px;
 }
 .item-right{
 
@@ -334,21 +357,21 @@ h1 {
     vertical-align: middle;
 
 }
-/* FINE VERDE */
+/* END SECTION 2  */
 
-/* contatore e seconda tabella marchi */
+/* START SECTION 5 WHITE  */
 
-.counter, .logo-item{
+.counter, .logo-item{   /*customers counter*/
     float: left;
 }
-.table{
-    float: right;
-}
-
 .counter{
     width: 20%;
     padding: 30px;
 }
+.table{                 /*partners logo*/
+    float: right;
+}
+
 .logo-item{
     text-align: center;
     /* da cancellare */
@@ -364,7 +387,7 @@ h1 {
 }
 
 
-.foto{
+.foto{                /*assistant photo*/
     float: right;
     margin-right: 50px;
 
@@ -373,6 +396,10 @@ h1 {
     width:300px;
     height:350px;
 }
+
+/* END SECTION 5 */
+
+/* START SECTION 6 CONTACTS FOOTER */
 
 .footer-nav{
     position: relative;
