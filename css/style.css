@@ -15,8 +15,7 @@
     max-width: 1200px;
     margin: 0 auto;
     font-family: Roboto,sans-serif;
-    /* da cancellare */
-    border: 1px solid black;
+
 }
 /* valori di base contenitori fullwidth */
 .white{
@@ -426,13 +425,10 @@ h1 {
 .container-column{
     float: left;
     width: 25%;
-
-
 }
+
 .column{
 padding: 15px;
-
-
 }
 
 .column li {
@@ -441,18 +437,26 @@ padding: 15px;
 }
 .column li a, .footer-top li a, .legal a{
     color:#c8d6e2;
-    padding:0;
+    padding:0 ;
 }
 
 .column li a:hover, .footer-top li a:hover {
     color :#7fd1de;
 }
-
-/* .btn-footer{ capire come cambiare colore dentro a qst bottone
+.column button{
+    border:none;
+    margin:0;
+    padding: 10px 15px;
+}
+.column button>a{
  border:none;
-    color: #33475b;
-} */
+color: #33475b;
+}
 
+#social >a {
+    padding :0 10px;
+    font-size: 14px;
+}
 .footer-top li, .legal a{
     display: inline-block;
     padding: 0 15px;
@@ -465,8 +469,17 @@ padding: 15px;
 .logo-hub{
     float: left;
     display: inline-block;
+    padding: 10px;
+}
+.logo-hub ul{
+    list-style-type: none;
 }
 .legal{
     float: right;
+    display: inline-block;
+    padding: 10px;
+}
+
+.legal li{
     display: inline-block;
 }
