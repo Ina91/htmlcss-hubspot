@@ -168,7 +168,7 @@ li a {
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translateX(15%);
+    /* transform: translateX(15%); */
 }
 .banner{
     z-index: 2;
@@ -178,7 +178,7 @@ li a {
 }
 .riga-verde{
     float:left;
-    width: 55%;
+    width: 50%;
     height:48px;
     background-color:#afebe4;
     border-top: 2px solid #33475c;
@@ -190,7 +190,7 @@ li a {
 
 .riga-verde-destra{
     float:left;
-    width: 45%;
+    width: 50%;
     height :87px;
     background-color: #00a48d;
     border-top: 2px solid#33475c;
