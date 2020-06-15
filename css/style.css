@@ -45,12 +45,7 @@
     background-color: #fff3ee;
     /* position: relative; */
 }
-.riga-verde{
-    height:50px;
-    background-image: linear-gradient(to left, #00a48d, #afebe4);
-    position: relative;
 
-}
 .green {
     color:white;
     background-image: linear-gradient(to right, #00acb6, #00b9a9);
@@ -68,7 +63,7 @@ width: 100%;
 z-index: 3; /*necessario affinvhè rimanga sempre in primo piano*/
 }
 .left-header {
-    padding: 20px;
+    padding: 20px 0;
     display: inline-block;
 }
 
@@ -175,6 +170,36 @@ li a {
     right: 0;
     transform: translateX(15%);
 }
+.banner{
+    z-index: 2;
+}
+.barre-verdi{
+    position:relative;
+}
+.riga-verde{
+    float:left;
+    width: 80%;
+    height:48px;
+    background-color:#afebe4;
+    border-top: 2px solid #33475c;
+    border-bottom: 2px solid #33475c;
+    position: absolute;
+    bottom:0;
+
+}
+
+.riga-verde-destra{
+    float:left;
+    width: 20%;
+    height :87px;
+    background-color: #00a48d;
+    border-top: 2px solid#33475c;
+    border-bottom: 2px solid #33475c;
+    position: absolute;
+    right:0;
+    bottom: 0;
+}
+
 
 h1 {
     font-size: 45px;
