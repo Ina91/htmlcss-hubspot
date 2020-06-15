@@ -227,7 +227,7 @@ h1 {
     height:200px;
 }
 
-.top-grey h2, .green-top h2{
+.top-grey h2,{
     margin:10px;
 }
 .top-grey p, .green-top p{
@@ -345,13 +345,18 @@ h1 {
 
 .green-top{
     width: 90%;
+    padding: 50px 0;
     text-align: center;
-    margin: 50px auto;
+    margin:0 auto;
 }
 
+.green-top h2{
+    padding:20px;
+}
 .green-bottom{
     text-align: center;
-    margin: 100px auto ;
+    margin: 0 auto ;
+    padding:100px 0;
 }
 .item{
     width: 25%;
