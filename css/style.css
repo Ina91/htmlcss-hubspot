@@ -37,7 +37,7 @@
 }
 
 .blue{
-
+    color:white;
     background-color: #33475b;
 }
 
@@ -194,7 +194,6 @@ h1 {
 }
 
 .contenuto {
-    /* width: 90%; */
     padding: 100px 0;
     margin: 0 auto;
 }
@@ -210,22 +209,7 @@ h1 {
 .top-grey p, .green-top p{
     margin:20px 0;
 }
-.card-uno{
-    background-color: white;
-    padding: 30px ;
-    margin: 25px 10px;
-    border-radius: 5px;
-}
-.card-uno img{
-    width: 210px;
-    height: 150px;
-}
-
-.card{
-    float: left;
-    width: 33.3333%;
-}
-
+ /* start cards */
 .card-box:hover, .card-uno:hover {            /*zoom cards with hover*/
   box-shadow: 0 5px 11px 0 #eaf0f6;
   transform: scale(1.05);
@@ -238,14 +222,46 @@ h1 {
     border-radius: 5px;
 }
 
-.btn-medium {
-    padding:10px 15px;
-
-}
 
 .card img {
     width: 210px;
     height: 150px;
+    object-position: center;
+}
+.card{
+    float: left;
+    width: 33.3333%;
+}
+
+.card-uno img{
+    width: 210px;
+    height: 150px;
+}
+
+.card p{
+    padding:15px;
+    margin:15px auto;
+}
+
+.card-uno{
+    background-color: white;
+    padding: 30px ;
+    margin: 25px 10px;
+    border-radius: 5px;
+}
+
+.card-right h3, h4, hr{
+    margin: 15px auto;
+}
+.card-right hr {
+    width: 65%;
+    vertical-align: middle;
+    margin: auto 20px;
+
+}
+
+.card-right h4, .card-right hr{
+    display: inline-block;
 }
 
 .card-left{
@@ -255,7 +271,7 @@ h1 {
 }
 
 .card-right{
-    width: 50%;
+    width: 65%;
     vertical-align: middle;
     display: inline-block;
     position: relative;
@@ -264,47 +280,40 @@ h1 {
 }
 .card-top{
     height: 350px;
-}
-
-.card-top h3{
     text-align: center;
+}
+
+.card-top h3, .card-top p{
     margin:15px auto;
 }
-.card-bottom h5{
+.card-bottom h4{
     text-align: center;
-    margin:15px auto;
-
+    margin:20px auto;
 }
 
-.card p{
-    padding:15px;
-    margin:15px auto;
+.btn-medium {
+    padding:10px 15px;
+    margin :15px auto;
 }
-
 .btn-card {
     text-align: center;
     margin:15px auto;
 }
-/* capire come cambiare immagine check list */
-.contenuto ul {
+
+.contenuto ul, .column ul {
   list-style: none;
   padding: 10;
-  margin:15px auto;
+  margin:20px auto;
 }
-.contenuto li {
-  padding-left: 1.3em;
+.card-right li {
+    display: inline-block;
+    padding: 10px;
 }
-.contenuto li:before {
-  content: ""; /* FontAwesome Unicode */
-  /* font-family: fontawesome; */
-  ba
-  display: inline-block;
-  margin-left: -1.3em; /* same as padding-left set on li */
-  width: 1.3em;
-  color:#ff7a59;/* same as padding-left set on li */
-}
-/* fine check list */
 
+.card-box li i, .card-uno li i {
+    color:#ff7a59;
+    margin:auto 10px;
+}
 
 /* END SECTION 3 GREY */
 
@@ -343,24 +352,33 @@ h1 {
 
     border-right: none
 }
-
+.item-text{
+    line-height: 100px;
+    vertical-align: middle;
+    object-position: center;
+    position: relative;
+}
 .number{
     font-size: 50px;
     font-weight: 700;
-    line-height: 100px;
     display: inline-block;
 }
 .plus{
+    margin :auto 5px;
     display: inline-block;
     font-weight: bold;
-    line-height: 100px;
-    vertical-align: middle;
-
+    position : absolute;
 }
 /* END SECTION 2  */
 
 /* START SECTION 5 WHITE  */
 
+.white-top{
+    margin:30px auto;
+}
+.white-bottom{
+    position: relative;
+}
 .counter, .logo-item{   /*customers counter*/
     float: left;
 }
@@ -370,22 +388,22 @@ h1 {
 }
 .table{                 /*partners logo*/
     float: right;
+    margin: 20px 150px;
 }
 
 .logo-item{
     text-align: center;
-    /* da cancellare */
-    width: 100px;
-    height: 50px;
-    border:1px solid black;
-}
-.white-top{
-    margin:30px auto;
-}
-.white-bottom{
-    position: relative;
+    padding: 15px 1px;
+    margin:auto 5px;
+
 }
 
+.logo-partners{
+    object-fit: contain;
+    width: 100px;
+    height:35px;
+
+}
 
 .foto{                /*assistant photo*/
     float: right;
@@ -408,13 +426,47 @@ h1 {
 .container-column{
     float: left;
     width: 25%;
-    /* da cancellare */
+
 
 }
 .column{
-    /* da cancellare */
-    height: 200px;
+padding: 15px;
 
-border: 1px solid white;
 
+}
+
+.column li {
+    padding: 8px 0;
+    font-size:11px;
+}
+.column li a, .footer-top li a, .legal a{
+    color:#c8d6e2;
+    padding:0;
+}
+
+.column li a:hover, .footer-top li a:hover {
+    color :#7fd1de;
+}
+
+/* .btn-footer{ capire come cambiare colore dentro a qst bottone
+ border:none;
+    color: #33475b;
+} */
+
+.footer-top li, .legal a{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer-top {
+    margin : 0 auto;
+    text-align: center;
+}
+
+.logo-hub{
+    float: left;
+    display: inline-block;
+}
+.legal{
+    float: right;
+    display: inline-block;
 }
